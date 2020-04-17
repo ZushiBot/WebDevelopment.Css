@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title</title>
+        <style>
+            @keyframes slide-bottom{
+                0%{transform:translateY(0)}
+                45%{transform:translateY(0)}
+                50%{transform:translateY(22px)}
+                55%{transform:translateY(0)}
+                100%{transform:translateY(0)}
+                }
+            body {
+                background: white;
+            }
+            .head {
+                position: absolute;
+                z-index: 1;
+                top: -240px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: greenyellow;
+                margin: auto;
+                height: 70px;
+                width: 161px;
+                border-top-left-radius: 90px;
+                border-top-right-radius: 90px;
+            }
+            .body {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: greenyellow;
+                margin: auto;
+                height: 147px;
+                width: 163px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .eye1 {
+                position: absolute;
+                top: -230px;
+                left: -60px;
+                right: 0;
+                bottom: 0;
+                background: rgb(255, 255, 255);
+                margin: auto;
+                z-index: 2;
+                height: 20px;
+                width: 20px;
+                border-radius: 90px;
+            }
+            .eye2 {
+                position: absolute;
+                top: -230px;
+                left: 60px;
+                right: 0;
+                bottom: 0;
+                background: rgb(255, 255, 255);
+                margin: auto;
+                z-index: 2;
+                height: 20px;
+                width: 20px;
+                border-radius: 90px;
+            }
+            .l-h{
+                position: absolute;
+                top: -40px;
+                left: -220px;
+                right: 0;
+                bottom: 0;
+                background: greenyellow;
+                margin: auto;
+                z-index: 2;
+                height: 115px;
+                width: 34px;
+                border-radius: 90px;
+            }
+            .r-h{
+                position: absolute;
+                top: -40px;
+                left: 220px;
+                right: 0;
+                bottom: 0;
+                background: greenyellow;
+                margin: auto;
+                z-index: 2;
+                height: 115px;
+                width: 34px;
+                border-radius: 90px;
+            }
+            .l-l{
+                position: absolute;
+                top: 0px;
+                left: -60px;
+                right: 0;
+                bottom: -210px;
+                background: greenyellow;
+                margin: auto;
+                z-index: 2;
+                height: 62px;
+                width: 30px;
+                border-bottom-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+            }
+            .r-l{
+                position: absolute;
+                top: 0px;
+                left: 60px;
+                right: 0;
+                bottom: -210px;
+                background: greenyellow;
+                margin: auto;
+                z-index: 2;
+                height: 62px;
+                width: 30px;
+                border-bottom-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+            }
+            .horn-l{
+                position: absolute;
+                top: -335px;
+                left: -120px;
+                right: 0;
+                bottom: 0px;
+                background: greenyellow;
+                margin: auto;
+                height: 62px;
+                width: 8px;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px;
+                transform: rotate(-45deg);
+            }
+            .horn-r{
+                position: absolute;
+                top: -335px;
+                left: 120px;
+                right: 0;
+                bottom: 0px;
+                background: greenyellow;
+                margin: auto;
+                height: 62px;
+                width: 8px;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px;
+                transform: rotate(45deg);
+            }
+            .pap-l{
+                position: absolute;
+                top: -275px;
+                left: -60px;
+                right: 0;
+                bottom: 0;
+                background: greenyellow;
+                margin: auto;
+                z-index: 2;
+                height: 20px;
+                width: 20px;
+                border-radius: 90px;
+                animation:slide-bottom 10s linear both;
+                animation-iteration-count: infinite;
+            }
+            .pap-r{
+                position: absolute;
+                top: -275px;
+                left: 60px;
+                right: 0;
+                bottom: 0;
+                background: greenyellow;
+                margin: auto;
+                z-index: 2;
+                height: 22px;
+                width: 22px;
+                border-radius: 90px;
+                animation:slide-bottom 10s linear  both;
+                animation-iteration-count: infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="thead">
+            <div class="head"></div>
+            <div class="eye1"></div>
+            <div class="eye2"></div>
+            <div class="horn-l"></div>
+            <div class="horn-r"></div>
+            <div class="pap-l"></div>
+            <div class="pap-r"></div>
+        </div>
+        <div class="body"></div>
+        <div class="l-h"></div>
+        <div class="r-h"></div>
+        <div class="l-l"></div>
+        <div class="r-l"></div>
+    </body>
+</html>
